@@ -1,0 +1,94 @@
+:root{
+    --lyrics: #fff;
+    --icon: rgba(217, 217, 217, 0.614);
+    --lyric_button: #C83BAE;
+}
+html{
+    font-size: 62.5%;
+}
+
+body{
+    background-image: url(../img/background.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.6rem;
+}
+.main{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: rgba( 255, 255, 255, 0.1 );
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    border-radius: 25px;
+    border: 1px solid #ffffff;
+}
+main{
+    width: 50rem;
+    height: 62rem;  
+}
+h1, p, i{
+    color: var(--lyrics);
+}
+h1{
+    font-size: 5rem;
+}
+p{
+    font-size: 1.5rem;
+    margin: 5rem 0 5rem 0;
+}
+.content{
+    padding: 5rem;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+img{
+    width: 14.5rem;
+    height: 14rem;
+    border-radius: 50%;
+    margin-bottom: 6rem;
+}
+ul{
+    display: flex;
+    gap: 3rem;
+    margin-bottom: 4rem;
+}
+li{
+    height: 3rem;
+    width: 3rem;
+    float: left;
+    padding: .5rem;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--icon);
+    cursor: pointer;
+}
+.button{
+    height: 6rem;
+    width: 27rem;
+}
+button{
+    color: var(--lyric_button);    
+    font-weight: 700;
+    width: 100%;
+    height: 100%;
+    border: var(--lyrics);
+    border-radius: 8rem;
+    cursor: pointer;
+}
+
+.button :hover{
+    background-color: var(--icon);
+    color: #fff;
+}
